@@ -3,7 +3,7 @@ ABSTRACTION
 Cacher les détails de comment quelque chose fonctionne derrière une structure plus simple
 et facile à manipuler.
 FONCTION
-Abstraction quic ache un paquet de déclarations derrière un seul nom intuitif.
+Abstraction qui cache un paquet de déclarations derrière un seul nom intuitif.
 > On appelle seulement le nom et le programme fera tout ce que le nom cache.
 SIGNATURE d'une fonction
 ------------------------
@@ -41,18 +41,18 @@ public class Fonctions
             int x = 3;
         */
 
-        // appel de la fonction funcNoParameters
-        funcNoParameters();
+        // appel de la fonction luccinpasdeparametres
+        luccinpasdeparametres();
 
-        // appel de la fonction funcOneParams
-        funcOneParam(5);
+        // appel de la fonction luccinunparametre
+        luccinunparametre(7);
 
         // appel de la fonction funcTwoParams
-        funcTwoParam(13, 21);
+        funcTwoParam(8, 24);
 
         // appel de la fonction funcTwoParamsWithReturn
-        int sum = funcTwoParamWithReturn(13, 21);
-        funcOneParam(sum); // appel "bonus" de funcOneParam
+        int sum = funcTwoParamWithReturn(8, 24);
+        luccinunparametre(sum); // appel "bonus" de luccinunparametre
 
     }
 
@@ -61,13 +61,13 @@ public class Fonctions
      * On le définit à l'intérieur de la classe, mais à l'extérieur de main.
      * L'ordre ne dérange pas parce que Java est une langue compilée.
     */
-    static void funcNoParameters()
+    static void luccinpasdeparametres()
     {
         System.out.println("You called a function with no parameters and no return value.");
     }
 
     /** Notre propre fonction avec un paramètre */
-    static void funcOneParam(int a)
+    static void luccinunparametre(int a)
     {
         System.out.println("double your value is: " + 2*a);
     }
