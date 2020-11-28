@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class projet {
     public static void main(String[] args) {
 
-
+        // mettre les lignes 6 à 24 dans une boucle while + ajouter une déclaration "break;" dans l'option de quitter
         Scanner input = new Scanner(System.in);
         System.out.println("BIENVENUE");
         System.out.println();
